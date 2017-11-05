@@ -29,9 +29,9 @@ def _sequence_is_matched(function_node, call_sequence, node_to_item):
     return False
 
 
-class CallerInspectionHook(function_hook.FunctionHook):
+class FindCallSequenceHook(function_hook.FunctionHook):
 
-    name = 'CallerInspectionHook'
+    name = 'FindCallSequenceHook'
 
     def __init__(self, call_sequence):
         self._call_sequence = call_sequence
@@ -91,7 +91,7 @@ def gradcam(model, x, calls, y_grad=None, loss_func=None, feature_index=0):
     else:
         xp = cuda.get_array_module(x)
 
-    with CallerInspectionHook(calls) as hook:
+    with FindCallSequenceHook(calls) as hook:
         with chainer.using_config('train', False):
             if loss_func is not None:
                 y = loss_func(x)
