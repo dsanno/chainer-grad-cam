@@ -88,9 +88,6 @@ Parameters
 $ python src/vgg16.py image/cat_dog.jpg cat_dog_heatmap.jpg cat_dog_overlay.jpg 242
 ```
 
-* Input image  
-<img src="/image/cat_dog.jpg" width="320px" alt="Input image">
-* Heatmap  
-<img src="/image/cat_dog_heatmap.jpg"  alt="Heatmap image">
-* Heatmap over input image  
-<img src="/image/cat_dog_overlay.jpg"  alt="Heatmap over input image">
+|Input image|Heatmap|Heatmap over input image|
+|:---|:---|:---|
+|<img src="/image/cat_dog.jpg" width="320px" alt="Input image">|<img src="/image/cat_dog_heatmap.jpg"  alt="Heatmap image">|<img src="/image/cat_dog_overlay.jpg"  alt="Heatmap over input image">|
