@@ -81,3 +81,16 @@ Parameters
 * `overlay_path`: (Required) File path for heatmap over input image
 * `label`: (Required) Class label index
 * `gpu_device`: (Optional) GPU device ID, negative value indicates CPU (default: -1)
+
+## Example
+
+```
+$ python src/vgg16.py image/cat_dog.jpg cat_dog_heatmap.jpg cat_dog_overlay.jpg 242
+```
+
+* Input image  
+<img src="/image/cat_dog.jpg" width="320px" alt="Input image">
+* Heatmap  
+![Heatmap image](image/cat_dog_heatmap.jpg "Heatmap image")
+* Heatmap over input image  
+![Heatmap over input image](image/cat_dog_overlay.jpg "Heatmap over input image")
