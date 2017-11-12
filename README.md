@@ -91,6 +91,6 @@ $ python src/vgg16.py image/cat_dog.jpg cat_dog_heatmap.jpg cat_dog_overlay.jpg 
 * Input image  
 <img src="/image/cat_dog.jpg" width="320px" alt="Input image">
 * Heatmap  
-![Heatmap image](image/cat_dog_heatmap.jpg "Heatmap image")
+<img src="/image/cat_dog_heatmap.jpg"  alt="Heatmap image">
 * Heatmap over input image  
-![Heatmap over input image](image/cat_dog_overlay.jpg "Heatmap over input image")
+<img src="/image/cat_dog_overlay.jpg"  alt="Heatmap over input image">
