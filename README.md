@@ -1,7 +1,11 @@
 Chainer Grad-CAM
 ====
 
-Chainer implementation of Grad-CAM without modifying network structure.
+Experimental Chainer implementation of Grad-CAM without modifying network structure.
+
+# Caution
+
+This implementation depends on Chainer internal implementation, so it may not work on later version of Chainer.
 
 # Requirements
 
@@ -75,4 +79,5 @@ Parameters
 * `image_path`: (Required) Input image file path
 * `heatmap_path`: (Required) File path for heatmap image
 * `overlay_path`: (Required) File path for heatmap over input image
+* `label`: (Required) Class label index
 * `gpu_device`: (Optional) GPU device ID, negative value indicates CPU (default: -1)
